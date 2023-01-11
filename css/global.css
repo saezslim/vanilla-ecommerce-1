@@ -1,0 +1,39 @@
+*, **::before, **::after {box-sizing: border-box;}
+html, body { margin: 0; padding: 0;}
+
+:root{
+  --clr-blue: hsl(200 90% 40%);
+  --clr-ligth-green: hsl(100 40% 60%);
+  --clr-dark-green: hsl(100 40% 40%);
+  --clr-black: hsl(0 0% 0%);
+  --clr-white: hsl(0 100% 100%);
+
+  --font-size-nr: 1rem;
+  --font-size-md: 1.875rem;
+  --font-size-lg: 2.5rem;
+  --font-size-xl: 3.125rem;
+}
+
+h1{font-size: var(--font-size-xl, 3.125rem);}
+h2{font-size: var(--font-size-lg, 2.5rem);}
+h3{font-size: var(--font-size-md, 1.875rem);}
+p{font-size: var(--font-size-nr, 1rem);}
+a{font-size: var(--font-size-nr, 1rem); text-decoration: none;}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 70%;
+  max-width: 1400px;
+}

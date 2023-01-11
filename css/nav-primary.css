@@ -1,0 +1,9 @@
+.nav-primary-container{
+  border-top: 1px solid var(--clr-black);
+  padding: 1.5em;
+}
+
+.nav-primary{
+  width: 70%;
+  justify-content: space-evenly;
+}

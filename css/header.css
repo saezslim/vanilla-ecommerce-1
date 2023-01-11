@@ -1,0 +1,7 @@
+.header{
+  margin-top: 3rem;
+}
+
+.header__span{
+  color: var(--clr-blue);
+}
