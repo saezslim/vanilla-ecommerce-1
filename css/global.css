@@ -7,6 +7,7 @@ html, body { margin: 0; padding: 0;}
   --clr-dark-green: hsl(100 40% 40%);
   --clr-black: hsl(0 0% 0%);
   --clr-white: hsl(0 100% 100%);
+  --clr-grey: hsl(0 0% 85%);
 
   --font-size-nr: 1rem;
   --font-size-md: 1.875rem;
@@ -36,4 +37,8 @@ a{font-size: var(--font-size-nr, 1rem); text-decoration: none;}
 .container{
   width: 70%;
   max-width: 1400px;
+}
+
+.nav-link{
+  font-size: var(--font-size-md);
 }

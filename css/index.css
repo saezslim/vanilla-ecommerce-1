@@ -1,0 +1,7 @@
+.hero{
+  width: 100%;
+  background: no-repeat url('../img/principal.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 38rem;
+}

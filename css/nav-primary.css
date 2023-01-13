@@ -1,9 +1,8 @@
 .nav-primary-container{
-  border-top: 1px solid var(--clr-black);
+  border-top: 1px solid var(--clr-grey);
   padding: 1.5em;
 }
 
 .nav-primary{
-  width: 70%;
   justify-content: space-evenly;
 }
