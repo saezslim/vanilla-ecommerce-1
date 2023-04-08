@@ -5,3 +5,153 @@
   background-position: center;
   height: 38rem;
 }
+
+.categories__title{
+  text-align: center;
+  font-size: var(--font-size-md, 1.875rem);
+}
+
+.category-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem;
+  margin: 0 auto;
+}
+
+.category img{
+  display: block;
+  min-width: 100%;
+}
+
+.category a {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-nr);
+  color: var(--clr-black);
+  padding: 1.25em;
+  border-bottom-right-radius: 2rem;
+  /* border-bottom-left-radius: 2rem; */
+
+  transition: background 175ms linear,
+    color 175ms linear;
+}
+
+.category a:hover{
+  background: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+/* ABOUT US */
+
+.about{
+  margin: 5rem 0;
+  padding: 6.25em 0;
+  padding-left: 6.25rem;
+  background-image: linear-gradient(to right,
+    transparent 50%, var(--clr-blue) 50%),
+    url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  background-position: left center;
+
+  justify-content: flex-end;
+}
+
+/* .about__img{
+  width: 50%;
+  object-fit: cover;
+  
+} */
+
+.about__us{
+  flex-basis: 50%;
+  padding-left: 6.25rem;
+  color: var(--clr-white);
+}
+
+/* MAIN CONTAINER */
+.main-container{
+  margin: 5rem auto;
+}
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+}
+
+.product:nth-child(1){
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.product:nth-child(1) img{
+  height: 26.875rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product:nth-child(2){
+  grid-column: 1/4;
+}
+
+.product:nth-child(2) img,
+.product:nth-child(3) img{
+  height: 18.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product:nth-child(3){
+  grid-column: 4/7;
+}
+
+.product:nth-child(4){
+  grid-column: 1/3;
+}
+
+.product:nth-child(5){
+  grid-column: 3/5;
+}
+
+.product:nth-child(6){
+  grid-column: 5/7;
+}
+
+.product{
+  background: var(--clr-blue);
+}
+
+.product__info, .product__info a{
+  color: var(--clr-white);
+  padding: .625rem;
+}
+
+.price{
+  font-size: var(--font-size-md);
+  font-weight: 900;
+}
+
+/* FOOTER */
+
+.footer-container{
+  border-top: 1px solid var(--clr-grey);
+}
+
+.footer__info{
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.footer-nav{
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.footer-nav a {
+  font-weight: 400;
+}

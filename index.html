@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/nav-primary.css">
@@ -16,7 +20,7 @@
   </header>
   <div class="row nav-primary-container">
     <nav class="row container nav-primary">
-      <a href="" class="nav-link nav-primary__link">Inicio</a>
+      <a href="" class="nav-link nav-primary__link nav-link--active">Inicio</a>
       <a href="" class="nav-link nav-primary__link">Nosotros</a>
       <a href="" class="nav-link nav-primary__link">Tienda</a>
       <a href="" class="nav-link nav-primary__link">Blog</a>
@@ -25,25 +29,97 @@
     </nav>
   </div>
   <div class="hero"></div>
-  <section>
-    <h2>Categorías de Productos</h2>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
-  <section>
-    <img src="" alt="">
-    <div>
-      <h2>Sobre Nosotros</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptatibus saepe eum, quidem enim soluta, officiis sapiente vel fugiat maxime natus dolorem amet veritatis iusto doloremque illo? Nulla, odio ratione!</p>
+  <section class="categories">
+    <h2 class="categories__title">Categorías de Productos</h2>
+    <div class="container category-list">
+      <div class="category">
+        <img src="/img/categoria1.jpg" alt="Imagen Categoría">
+        <a href="#">Oficina</a>
+      </div>
+      
+      <div class="category">
+        <img src="/img/categoria2.jpg" alt="Imagen Categoría">
+        <a href="#">Hogar</a>
+      </div>
+      
+      <div class="category">
+        <img src="/img/categoria3.jpg" alt="Imagen Categoría">
+        <a href="#">Cocina</a>
+      </div>
+      
     </div>
   </section>
-  <main></main>
-  <footer>
-    <div>
-      <div>
+  <section class="about row">
+    <!-- <img src="./img/nosotros.jpg" alt="" class="about__img"> -->
+    <div class="about__us">
+      <h2 class="about__us__title">Sobre Nosotros</h2>
+      <p class="about__us__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi volup</p>
+    </div>
+  </section>
+  <main class="main-container container">
+    <h2 class="text-center">Nuestros productos</h2>
+    <div class="products">
+      <div class="product">
+        <img src="./img/producto1.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 1</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./img/producto2.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 2</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./img/producto3.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 3</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./img/producto4.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 4</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./img/producto5.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 5</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./img/producto6.jpg" alt="Producto 1">
+        <div class="product__info text-center">
+          <h3>Producto 6</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, modi in! Facere, libero.</p>
+          <p class="price">$1.000.000</p>
+          <a href="#" class="add-cart">Agregar al Carrito</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <div class="footer__info container">
+      <div class="footer__info__categories">
         <h3>Categorías</h3>
-        <nav>
+        <nav class="col footer-nav">
           <a href="">Cocina</a>
           <a href="">Oficina</a>
           <a href="">Jardín</a>
@@ -51,9 +127,9 @@
           <a href="">Dormitorios</a>
         </nav>
       </div>
-      <div>
+      <div class="footer__info__about">
         <h3>Sobre Nosotros</h3>
-        <nav>
+        <nav class="col footer-nav">
           <a href="">Nuestra Historia</a>
           <a href="">Misión, Visión y Valores</a>
           <a href="">Carreras</a>
@@ -61,16 +137,16 @@
           <a href="">Términos del Servicio</a>
         </nav>
       </div>
-      <div>
+      <div class="footer__info__support">
         <h3>Soporte</h3>
-        <nav>
+        <nav class="col footer-nav">
           <a href="">Preguntas Frecuentes</a>
           <a href="">Ayuda en línea</a>
           <a href="">Confianza y Seguridad</a>
         </nav>
       </div>
     </div>
-    <p>Ningún derecho reservado. TiendaMuebles</p>
+    <p class="text-center">Ningún derecho reservado. TiendaMuebles</p>
   </footer>
 </body>
 </html>

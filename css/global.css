@@ -1,5 +1,6 @@
 *, **::before, **::after {box-sizing: border-box;}
-html, body { margin: 0; padding: 0;}
+html, body { margin: 0; padding: 0; line-height: 1.5;}
+img{max-width: 100%;}
 
 :root{
   --clr-blue: hsl(200 90% 40%);
@@ -19,7 +20,16 @@ h1{font-size: var(--font-size-xl, 3.125rem);}
 h2{font-size: var(--font-size-lg, 2.5rem);}
 h3{font-size: var(--font-size-md, 1.875rem);}
 p{font-size: var(--font-size-nr, 1rem);}
-a{font-size: var(--font-size-nr, 1rem); text-decoration: none;}
+a{font-size: var(--font-size-nr, 1rem); 
+  text-decoration: none; color: var(--clr-black); font-weight: 700;}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
 
 .row{
   display: flex;
@@ -41,4 +51,21 @@ a{font-size: var(--font-size-nr, 1rem); text-decoration: none;}
 
 .nav-link{
   font-size: var(--font-size-md);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.add-cart{
+  display: block;
+  background: var(--clr-ligth-green);
+  text-transform: uppercase;
+  font-weight: 900;
+  
+  transition: background 175ms linear;
+}
+
+.add-cart:hover{
+  background: var(--clr-dark-green);
 }
