@@ -57,7 +57,11 @@ body{
   text-align: center;
 }
 
-.add-cart{
+.mg-top{
+  margin-top: 5rem;
+}
+
+.add-cart, .btn{
   display: block;
   background: var(--clr-ligth-green);
   text-transform: uppercase;
@@ -66,6 +70,29 @@ body{
   transition: background 175ms linear;
 }
 
-.add-cart:hover{
+.add-cart:hover, .btn:hover{
   background: var(--clr-dark-green);
+}
+
+/* FOOTER */
+
+.site-footer-container{
+  border-top: 1px solid var(--clr-grey);
+}
+
+.site-footer__info{
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.site-footer-nav{
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.site-footer-nav a {
+  font-weight: 400;
 }

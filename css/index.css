@@ -132,26 +132,3 @@
   font-size: var(--font-size-md);
   font-weight: 900;
 }
-
-/* FOOTER */
-
-.footer-container{
-  border-top: 1px solid var(--clr-grey);
-}
-
-.footer__info{
-  display: grid;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-
-.footer-nav{
-  gap: 1rem;
-  align-items: flex-start;
-}
-
-.footer-nav a {
-  font-weight: 400;
-}

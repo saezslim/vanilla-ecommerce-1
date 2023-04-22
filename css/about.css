@@ -1,0 +1,7 @@
+.grid-about{
+  display: grid;
+  margin: 5rem auto;
+  column-gap: 4rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem 1fr));
+}
