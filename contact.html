@@ -36,16 +36,16 @@
 
   <main class="main-container container">
     <h2 class="text-center">Contacto</h2>
-    <form action="">
+    <form class="contact-form">
       <fieldset>
         <legend>Tus Datos</legend>
         <div class="field">
           <label for="nombre">Nombre: </label>
-          <input id="nombre" type="text" placeholder="Coloca tu Nombre">
+          <input id="nombre" type="text" placeholder="Coloca tu Nombre" required>
         </div>
         <div class="field">
           <label for="asunto">Asunto: </label>
-          <input type="text" id="asunto" placeholder="Tu Asunto">
+          <input type="text" id="asunto" placeholder="Tu Asunto" required>
         </div>
         <div class="field">
           <label for="email">E-mail: </label>
@@ -55,13 +55,47 @@
           <label for="tel">Teléfono: </label>
           <input type="tel" id="tel" placeholder="Tu Teléfono">
         </div>
+        <div class="field">
+          <label for="mensaje">Teléfono: </label>
+          <textarea name="" id="mensaje" cols="20" rows="10"></textarea>
+        </div>
       </fieldset>
       <fieldset>
         <legend>País</legend>
+        <div class="field">
+          <label for="pais">País</label>
+          <select name="" id="pais">
+            <option value="" disabled selected>-- Seleccione --</option>
+            <option value="CL">Chile</option>
+            <option value="PR">Perú</option>
+            <option value="AR">Argentina</option>
+            <option value="BO">Bolivia</option>
+          </select>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Información Extra</legend>
+        <div class="field">
+          <layer for="cliente">Cliente</layer>
+          <input type="radio" name="tipo" id="cliente" value="cliente">
+        </div>
+        <div class="field">
+          <layer for="proveedor">Proveedor</layer>
+          <input type="radio" name="tipo" id="proveedor" value="proveedor">
+        </div>
+        <div class="field">
+          <layer for="categoria">Categorías de Interés</layer>
+          <input list="categorias" name="categorias" id="categoria">
+          <datalist id="categorias">
+            <option value="Cocina">
+            <option value="Exterior">
+            <option value="Recamaras">
+            <option value="Oficinas">
+            <option value="Televisión">
+          </datalist>
+        </div>
       </fieldset>
+      <input class="btn submit-form" type="submit" value="Enviar Formulario">
     </form>
   </main>
 

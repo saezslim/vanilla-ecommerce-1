@@ -4,6 +4,7 @@ img{max-width: 100%;}
 
 :root{
   --clr-blue: hsl(200 90% 40%);
+  --clr-dark-blue: #005485;
   --clr-ligth-green: hsl(100 40% 60%);
   --clr-dark-green: hsl(100 40% 40%);
   --clr-black: hsl(0 0% 0%);
@@ -72,6 +73,7 @@ body{
 
 .add-cart:hover, .btn:hover{
   background: var(--clr-dark-green);
+  cursor: pointer;
 }
 
 /* FOOTER */
