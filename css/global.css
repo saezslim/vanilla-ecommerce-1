@@ -54,7 +54,7 @@ body{
 }
 
 .container{
-  width: 70%;
+  width: 80%;
   max-width: 1400px;
 }
 
@@ -79,6 +79,16 @@ body{
   transition: background 175ms linear;
 }
 
+.btn{
+  width: 100%;
+}
+
+@media (min-width: 768px) { 
+  .btn{
+    width: min-content;
+  }
+}
+
 .add-cart:hover, .btn:hover{
   background: var(--clr-dark-green);
   cursor: pointer;
@@ -88,19 +98,44 @@ body{
 
 .site-footer-container{
   border-top: 1px solid var(--clr-grey);
+  display: block;
+}
+
+.site-footer-container > p {
+  margin-top: 2.5rem;
 }
 
 .site-footer__info{
-  display: grid;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) { 
+  .site-footer__info{
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
 }
 
 .site-footer-nav{
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.site-footer__info > div{
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .site-footer-nav{
+    align-items: flex-start;
+  }
+  .site-footer__info > div{
+    text-align: left;
+  }
 }
 
 .site-footer-nav a {
