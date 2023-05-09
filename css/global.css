@@ -12,17 +12,25 @@ img{max-width: 100%;}
   --clr-grey: hsl(0 0% 85%);
 
   --font-size-nr: 1rem;
-  --font-size-md: 1.875rem;
-  --font-size-lg: 2.5rem;
-  --font-size-xl: 3.125rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.075rem;
 }
 
-h1{font-size: var(--font-size-xl, 3.125rem);}
-h2{font-size: var(--font-size-lg, 2.5rem);}
-h3{font-size: var(--font-size-md, 1.875rem);}
+h1{font-size: var(--font-size-xl, 2.375rem);}
+h2{font-size: var(--font-size-lg, 2rem);}
+h3{font-size: var(--font-size-md, 1.5rem);}
+
+@media (min-width: 768px) { 
+  h1{font-size: var(--font-size-xl, 3.125rem);}
+  h2{font-size: var(--font-size-lg, 2.5rem);}
+  h3{font-size: var(--font-size-md, 1.875rem);}
+}
+
 p{font-size: var(--font-size-nr, 1rem);}
 a{font-size: var(--font-size-nr, 1rem); 
-  text-decoration: none; color: var(--clr-black); font-weight: 700;}
+  text-decoration: none; color: var(--clr-black);
+  font-weight: 700;}
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;

@@ -5,20 +5,32 @@
 
 .nav-primary{
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.nav-primary a{
-  font-size: var(--font-size-nr);
-  width: 100%;
-  text-align: center;
-  padding: 1.5em;
 
-  transition: background 175ms linear, color 175ms linear;
-}
 
-.nav-primary a:hover, .nav-link--active{
-  background: var(--clr-blue);
-  color: var(--clr-white);
+@media (min-width: 768px) { 
+
+  .nav-primary{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .nav-primary a{
+    flex:1;
+    font-size: var(--font-size-nr);
+    width: 100%;
+    text-align: center;
+    padding: 1.5em;
+  
+    transition: background 175ms linear, color 175ms linear;
+  }
+  
+  .nav-primary a:hover, .nav-link--active{
+    background: var(--clr-blue);
+    color: var(--clr-white);
+  }
 }
